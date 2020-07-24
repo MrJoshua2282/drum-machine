@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/drum-machine/static/css/main.8778ae09.chunk.css",
+    "main.js": "/drum-machine/static/js/main.d51a6600.chunk.js",
+    "main.js.map": "/drum-machine/static/js/main.d51a6600.chunk.js.map",
+    "runtime-main.js": "/drum-machine/static/js/runtime-main.49a0ba3c.js",
+    "runtime-main.js.map": "/drum-machine/static/js/runtime-main.49a0ba3c.js.map",
+    "static/js/2.e1e6bbb0.chunk.js": "/drum-machine/static/js/2.e1e6bbb0.chunk.js",
+    "static/js/2.e1e6bbb0.chunk.js.map": "/drum-machine/static/js/2.e1e6bbb0.chunk.js.map",
+    "index.html": "/drum-machine/index.html",
+    "precache-manifest.f70299fcb82b381c0a4fb2392ebb5641.js": "/drum-machine/precache-manifest.f70299fcb82b381c0a4fb2392ebb5641.js",
+    "service-worker.js": "/drum-machine/service-worker.js",
+    "static/css/main.8778ae09.chunk.css.map": "/drum-machine/static/css/main.8778ae09.chunk.css.map",
+    "static/js/2.e1e6bbb0.chunk.js.LICENSE.txt": "/drum-machine/static/js/2.e1e6bbb0.chunk.js.LICENSE.txt",
+    "static/media/bell-1.mp3": "/drum-machine/static/media/bell-1.7658f906.mp3",
+    "static/media/bell-2.mp3": "/drum-machine/static/media/bell-2.27592ab5.mp3",
+    "static/media/bell-3.mp3": "/drum-machine/static/media/bell-3.05cb6423.mp3",
+    "static/media/piano-1.mp3": "/drum-machine/static/media/piano-1.faafa8b5.mp3",
+    "static/media/piano-2.mp3": "/drum-machine/static/media/piano-2.c2f1538a.mp3",
+    "static/media/piano-3.mp3": "/drum-machine/static/media/piano-3.11b3ac56.mp3",
+    "static/media/piano-4.mp3": "/drum-machine/static/media/piano-4.241c9c88.mp3",
+    "static/media/piano-5.mp3": "/drum-machine/static/media/piano-5.8f0e21a2.mp3",
+    "static/media/soundF.flac": "/drum-machine/static/media/soundF.e6239126.flac"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49a0ba3c.js",
+    "static/js/2.e1e6bbb0.chunk.js",
+    "static/css/main.8778ae09.chunk.css",
+    "static/js/main.d51a6600.chunk.js"
+  ]
+}
