@@ -1,26 +1,67 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
 
-function App() {
+import './App.css';
+import Container from './components/Container/Container';
+import { allSounds } from './utilities/allSounds';
+
+export default function App() {
+  const [keyPress, setKeyPress] = useState('');
+  const [errorMess, setErrMess] = useState('');
+
+  const setKeyPressHandler = (value) => {
+    setKeyPress(value)
+  }
+
+  const pressBtnHandler = (e) => {
+    const { keyCode, key } = e;
+    setKeyPress(key.toUpperCase());
+    const doc = (src) => document.querySelector(`#${src}`).play();
+
+    switch (keyCode) {
+      case 81:
+        doc(allSounds[0].key);
+        break;
+      case 87:
+        doc(allSounds[1].key);
+        break;
+      case 69:
+        doc(allSounds[2].key);
+        break;
+      case 65:
+        doc(allSounds[3].key);
+        break;
+      case 83:
+        doc(allSounds[4].key);
+        break;
+      case 68:
+        doc(allSounds[5].key);
+        break;
+      case 90:
+        doc(allSounds[6].key);
+        break;
+      case 88:
+        doc(allSounds[7].key);
+        break;
+      case 67:
+        doc(allSounds[8].key);
+        break;
+      default:
+        setErrMess(`${key.toUpperCase()} is not supported`);
+        setTimeout(() => {
+          setErrMess('');
+        }, 2500);
+        return;
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('keydown', pressBtnHandler);
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container keyPress={keyPress} setKeyPressHandler={setKeyPressHandler}
+        errorMess={errorMess} />
     </div>
   );
 }
-
-export default App;

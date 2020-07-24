@@ -1,0 +1,24 @@
+#drum-machine {
+    transform: translate(-50, -50);
+    top: 50%;
+    position: relative;
+    text-align: center;
+
+    display: grid;
+    justify-items: center;
+    grid-gap: 1rem;
+}
+
+#display {
+    background-color: rgb(41, 225, 231);
+    width: 5rem;
+    border: 1px solid rgb(7, 153, 97);
+    border-radius: 3px;
+}
+
+.error {
+    width: max-content;
+    background-color: salmon;
+    border: 1px solid rgb(250, 76, 57);
+    border-radius: 3px;
+  }

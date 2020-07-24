@@ -1,0 +1,19 @@
+.drum-pad {
+    background-color: rgba(58, 107, 172, 0.466);
+    border: 1px solid rgba(44, 44, 238, 0.699);
+    padding: .25rem;
+    margin: .25rem;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.drum-pad:hover {
+    padding: .5rem;
+    border: 1px solid rgba(42, 42, 153, 0.404);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.342);
+}
+
+.drum-pad:active {
+    padding: .45rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.568);
+}
